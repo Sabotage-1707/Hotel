@@ -1,0 +1,30 @@
+﻿<Window x:Class="Praktika.LogIn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Praktika"
+        mc:Ignorable="d"
+        Icon="/Images/Icon.jpg"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        
+        Title="Вход" Height="248.591" Width="504.453">
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/Fone.jpg"></ImageBrush>
+        </Grid.Background>
+        <Label Content="Логин(Телефон)" Margin="0,27,375,147" FontSize="15" HorizontalContentAlignment="Right" Foreground="White" FontFamily="Times New Roman"></Label>
+        <Label Content="Пароль" Margin="10,78,375,99" FontSize="22" HorizontalContentAlignment="Right" Foreground="White" FontFamily="Times New Roman"></Label>
+        <TextBox x:Name="Login" Visibility="Visible" Foreground="Black" Margin="128,0,10,147"></TextBox>
+        <PasswordBox x:Name="Password"  Margin="128,78,10,89"></PasswordBox>
+        <Button Click="Button_Click" Margin="128,134,10,44" Content="Войти" FontSize="20" FontFamily="Times New Roman"></Button>
+        <Label Margin="262,174,133,5" HorizontalAlignment="Center" Width="101">
+            <Hyperlink Click="Hyperlink_Click">
+                <Run Text="Создать аккаунт" FontFamily="Times New Roman"></Run>
+            </Hyperlink>
+        </Label>
+        <Image Source="/Images/w256h2561387214968Help.png" Margin="445,176,0,0" MouseDown="Image_MouseDown"/>
+
+    </Grid>
+</Window>
