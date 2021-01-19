@@ -10,12 +10,12 @@ namespace Praktika
     [Serializable]
     public class Nomer
     {
-        int id { get; set; }
+        int id ;
         
-        double square { get; set; }
-        string type_Name { get; set; }
-        string status { get; set; }
-        DateTime end_Time { get; set; }
+        double square;
+        string type_Name ;
+        string status ;
+        DateTime end_Time ;
         public int Id
         {
             get { return id; }
